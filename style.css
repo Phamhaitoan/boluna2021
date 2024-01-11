@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.container{
+    background-color: white;
+}
+.big-menu{
+    position: sticky;
+    top: 0;
+}
+ul{
+    background-color: lightgray;
+    display: flex;
+    list-style: none;
+   justify-content: center;
+   min-height: 50px;
+   line-height: 47px ;
+}
+li{
+   padding: 10px 40px;
+}
+li:hover{
+    background-color: aquamarine;
+    cursor: wait;
+}
+.big-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+}
+.big-box >.box{
+    background-color:rgb(55, 177, 55);
+    padding: 100px 130px;
+    margin: 40px;
+}

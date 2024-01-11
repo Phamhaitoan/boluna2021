@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo Flexbox</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: rgb(233, 226, 226);
+        height: 300px;
+        display: flex;
+        justify-content:space-around;
+        
+    }
+    .item{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+    }
+    .item-1{
+        background-color: Red;
+    }
+    .item-2{
+        background-color: lightgreen;
+    }
+    .item-3{
+        background-color: lightblue;
+    }
+</style>
+<body>
+    <!-- Flexbox
+       - theo trục ngang - Main axis: justify-content
+          + justify-content: center -> căn ra giữa
+          + justify-content: start -> mặc định main start
+          + justify-content: end -> về main end
+          + iustify-content: space-around: các phần tử cách nhau một đoạn
+          + justify-content: space-between: các phần tử đẩy ra đầu và cuối
+          + justify-content: space-evenly -> các phần tử cách đều nhau
+       - Theo trục dọc - cross axis: align item
+        + align-items:center-> căn ra giữa dòng
+        + align-items: flex-start -> mặc định cross-start
+        + align-end: flex-end -> mặc định cross-end
+        -->
+     
+    <div class="container">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+    </div>
+    
+</body>
+</html>

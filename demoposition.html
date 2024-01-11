@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo position</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: rgb(94, 92, 92);
+        height: 500px;
+    }
+    .box{
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+    }
+    .box-1{
+        background-color: red;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        /* z-index: 3; */
+    }
+    .box-2{
+        background-color: lightblue;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        /* z-index: 4; */
+    }
+    .box-3{
+        background-color: lightgreen;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+    .sticky{
+        position: sticky;
+        top: 10px;
+        background-color: blue;
+    }
+    .fixed{
+        position: fixed;
+        background-color: aqua;
+        height: 50px;
+    }
+    /* .relative{
+        position:relative;
+        background-color: lightgreen;
+        width: 100px;
+        height: 100px;
+        left: 50px;
+        top: 100px;
+    } */
+</style>
+<body>
+    <!-- position giúp cho việc căn chỉnh các thành phần dễ dàng hơn
+    Khi mà sử dụng position thì có thể sử dụng các thuộc tính: top, left, right, bottom, z-index
+
+    Các thuộc tính trong position
+     + Position: relative -> vị trí tương đối, lấy chính bản thân làm mốc tọa độ
+     + Position: absolute -> vị trí tuyệt đối, lấy position gần nhất làm gốc tọa độ, nếu k có thì lấy cửa sổ window làm gốc tọa độ
+     + position: sticky -> vị trí window
+     + position: fixed ->
+     + position: static ->
+
+    -->
+    <!-- <div class="relative">Position Relative</div> -->
+
+<div class="container">
+    <div class="box box-1">box1</div>
+    <div class="box box-2">box2</div>
+    <div class="box box-3">box3</div>
+
+</div>
+
+    <div class="sticky"> Đây là Nav</div>
+    <p></p>
+
+   <div class="fixed">Position: fixed</div>
+
+
+</body>
+</html>
