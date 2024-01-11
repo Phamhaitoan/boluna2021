@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    .internal{
+        background-color: limegreen;
+    }
+    .priority{
+        background-color: green;
+    }
+
+</style>
+<body>
+    <!-- các cách sử dụng -->
+    <!-- cách 1: inline : viết trực tiếp trong thẻ-->
+ <div style="background-color: pink;">Hello World</div> 
+ <!-- cách 2: internal :viết thông qua cặp thể <style>-->
+ <div class="internal">
+    Internal style
+ </div>
+<!-- cách 3: external :viết thông qua file mở rộng có đuôi bằng .css
+../ lấy file khác thư mục
+./ truy cập cùng cấp
+-->
+<div class="external">External style</div><br>
+<br>
+<!-- sự ưu tiên 
+Inline > (internal== External)-->
+<div class="priority">sự ưu tiên</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

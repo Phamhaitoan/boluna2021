@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Selector</title>
+</head>
+<style>
+    /* div{
+        background-color: pink;
+    } */
+    /* sử dụng với id là#, id là duy nhất trong 1 THẺ */ 
+    #div-one{
+        background-color: limegreen;
+    }
+    /* sử dụng với class là. */
+    .div-two{
+        background-color: lightblue;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    div>p{
+        background-color: aquamarine;
+    }
+    span:hover{
+        background-color: blue;
+    }
+    /* div+p{
+        background-color: aqua;
+    } */
+    /* div p{
+        background-color: aqua;
+    } */
+    /* div,span{
+        background-color: red;
+    } */
+</style>
+
+<body>
+    <!-- Bộ chọn selector-->
+    <!-- 
+        + dấu *: chọn tất cả các thành phần, thường dùng để reset lại trang web
+        + tag: chọn các thẻ cùng loại
+        +tag01tag02: chọn tất cả các thành phần tag02 trong tag01
+        + tag01,tag02: chọn tất cả các thành phần 01 và 02
+        + tag01+tag02: chọn phần tử 02 kế bên 01
+        + tag01>tag02: chọn phần tử 02 có thành phần cha là 01
+     -->
+     <!-- 
+        + .class: gọi đến thẻ
+        + #id: gọi đến thẻ
+        + :hover: khi con trỏ chuột đi qua sẽ được đổi css
+        
+      -->
+    <div id="div-one">Hello World</div>
+    <div class="div-two">Hello World 1</div>
+    <div>Hello World 2</div>
+    <div>Hello World 3</div>
+    <div>
+        <div>Hello</div>
+        <span>anh tự</span>
+        <div>Hello</div>
+        <p>anh tuấn</p>
+        <p>anh tiệp</p>
+    </div>
+    <!-- <div>
+        <span>Quỳnh Anh</span>
+        <p>Diệu</p>
+    </div>
+     -->
+
+</body>
+</html>

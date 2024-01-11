@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập 5</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        font-size: 40px;
+        
+    }
+    div{
+        border: 1px solid grey;
+        width: 500px;
+        background-color: rgb(194, 187, 187);
+    }
+    form{
+        padding: 10px;
+    }
+    fieldset{
+        background-color: aliceblue;
+    }
+    input,textarea{
+        width: 100%;
+    }
+    
+    button{
+        background-color: black;
+        color: aliceblue;
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <div >
+        <form>
+            <h2>Tuyển dụng</h2>
+            <fieldset>
+                <label><b>Họ và tên:</b></label>
+                <br>
+                <input type="text" required>
+                <br>
+                <br>
+                <label><b>Email:</b></label>
+                <br>
+                <input type="email" required>
+                <br>
+                <br>
+                <label><b>Số điện thoại:</b></label>
+                <br>
+                <input type="number">
+                <br>
+                <br>
+                <label><b>CV:</b></label>
+                <br>
+                <input type="file">
+                <br>
+                <br>
+                <label><b>Tin nhắn:</b></label>
+                <br>
+                <textarea cols="40"></textarea>
+                <br>
+                <br>
+                <button type="submit">Gửi</button>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
